@@ -13,9 +13,9 @@ class ChildComponent extends Component {
         return (
             <div>
                 <MDBCard>
-                    <MDBCardImage src={this.props.imgdata} position='top' alt='...' />
+                    <MDBCardImage src={this.props.imagedata} position='top' alt='...' />
                     <MDBCardBody>
-                        <MDBCardTitle>{this.props.Title}</MDBCardTitle>
+                        <MDBCardTitle>{this.props.title}</MDBCardTitle>
                         <MDBCardText>
                             Some quick example text to build on the card title and make up the bulk of the card's content.
                         </MDBCardText>
@@ -28,5 +28,3 @@ class ChildComponent extends Component {
 }
 
 export default ChildComponent;
-
-

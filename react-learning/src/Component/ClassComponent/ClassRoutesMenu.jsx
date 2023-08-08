@@ -10,6 +10,9 @@ class ClassComponentMenu extends Component {
                     <li><Link to="intro">introduction of class component</Link></li>
                     <li><Link to="props">props</Link></li>
                     <li><Link to="state">state</Link></li>
+                    <li><Link to="conditionrendering">conditionrendering</Link></li>
+                    <li><Link to="controlled">controlled</Link></li>
+                    <li><Link to="listkeys">listkeys</Link></li>
                 </ol>
                 <Outlet></Outlet>
 
