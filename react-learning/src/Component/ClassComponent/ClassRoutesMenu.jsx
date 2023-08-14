@@ -6,7 +6,7 @@ class ClassComponentMenu extends Component {
         return (
             <>
                 <ol>
-                    <li><Link to="biscreact">Basic Level - ReactJS Interview Questions</Link></li>
+                    <li><Link to="basiclevel">Basic Level - ReactJS Interview Questions</Link></li>
                     <li><Link to="intro">introduction of class component</Link></li>
                     <li><Link to="props">props</Link></li>
                     <li><Link to="state">state</Link></li>

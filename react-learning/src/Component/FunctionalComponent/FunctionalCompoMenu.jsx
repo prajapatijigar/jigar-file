@@ -10,6 +10,8 @@ const FunctionalCompoMenu = () => {
                     <li><Link to="stateinfun">state</Link></li>
                     <li><Link to="propsinfun">props</Link></li>
                     <li><Link to="useeffect">useeffect</Link></li>
+                    <li><Link to="useimperative">UseImperative</Link></li>
+                    <li><Link to="usememo">Usememo</Link></li>
                 </ol>
             </div>
             <div>

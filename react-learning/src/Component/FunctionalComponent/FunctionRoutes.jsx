@@ -5,7 +5,9 @@ import FunctionalComponentIntro from "./FunctionalComponentIntro"
 import PropsInFuncCompo from "./PropsInFuncCompo"
 import StateInFunctiCompo from "./StateInFunctiCompo"
 import UseEffectFunCompo from "./UseEffectFunCompo"
- 
+import UseImperativefunCompo from "./UseImperativeHandler"
+import UseMemoInFunCompo from "./UseMemoInFunCompo"
+
 const FunctionRoutes = () => {
 
     const routes = useRoutes([
@@ -28,6 +30,14 @@ const FunctionRoutes = () => {
                 {
                     path: "useeffect",
                     element: <UseEffectFunCompo />
+                },
+                {
+                    path: "useimperative",
+                    element: <UseImperativefunCompo />
+                },
+                {
+                    path: "usememo",
+                    element: <UseMemoInFunCompo />
                 }
             ]
         }

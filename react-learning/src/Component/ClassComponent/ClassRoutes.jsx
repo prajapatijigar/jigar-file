@@ -2,7 +2,7 @@ import React, { Component, } from 'react';
 import ClassComponentMenu from "./ClassRoutesMenu";
 import { Route, Routes } from 'react-router-dom';
 import PropsComponent from "./PropsInClassComponent";
-import BasicLevelReact from "./BasicLevelReact";
+import BasicLevelReact from "./BasicLevelReact"
 import StateInClass from './StateInClass';
 import CondiRenderingInClassCompo from "./CondiRenderingInClassCompo"
 import Controlled from "./ControlledClass";
@@ -15,7 +15,7 @@ class ClassRoutes extends Component {
             <div>
                 <Routes>
                     <Route path='/' element={<ClassComponentMenu />}>
-                        <Route path="basiclevel" element={<BasicLevelReact />} />
+                        <Route path="basiclevel" element={<BasicLevelReact/>} />
                         <Route path='intro' element={<h2>intro</h2>} />
                         <Route path="props" element={<PropsComponent />} />
                         <Route path="state" element={<StateInClass />} />
