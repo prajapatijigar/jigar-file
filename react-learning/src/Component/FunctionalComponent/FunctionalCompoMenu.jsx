@@ -12,6 +12,7 @@ const FunctionalCompoMenu = () => {
                     <li><Link to="useeffect">useeffect</Link></li>
                     <li><Link to="useimperative">UseImperative</Link></li>
                     <li><Link to="usememo">Usememo</Link></li>
+                    <li><Link to="styled">styled</Link></li>
                 </ol>
             </div>
             <div>

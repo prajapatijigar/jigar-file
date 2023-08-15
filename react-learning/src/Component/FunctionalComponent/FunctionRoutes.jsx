@@ -7,7 +7,7 @@ import StateInFunctiCompo from "./StateInFunctiCompo"
 import UseEffectFunCompo from "./UseEffectFunCompo"
 import UseImperativefunCompo from "./UseImperativeHandler"
 import UseMemoInFunCompo from "./UseMemoInFunCompo"
-
+import StyledCompo from "./StyledCompo"
 const FunctionRoutes = () => {
 
     const routes = useRoutes([
@@ -38,6 +38,10 @@ const FunctionRoutes = () => {
                 {
                     path: "usememo",
                     element: <UseMemoInFunCompo />
+                },
+                {
+                    path: "styled",
+                    element: <StyledCompo />
                 }
             ]
         }

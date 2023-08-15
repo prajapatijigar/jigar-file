@@ -1,6 +1,7 @@
 import React from 'react';
 import ChildCompo from "./ChildComponent"
 
+
 const PropsInFuncCompo = () => {
      return (
           <>
