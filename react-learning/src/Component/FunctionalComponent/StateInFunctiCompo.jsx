@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
 
 const StateInFunctiCompo = () => {
+     const [state, setstate] = useState("default")
+     const [num, setnum] = useState(0)
 
-    const [username,setState] = useState("jigar prajapati")
-     
-    let btnClickHandle = ()=>{
-        console.log(username);
-        setState("kasamali")
+    
+    const onClick =() => {
+        setstate("jigr")
+    }
+    const onclickHadler =() => {
+        setnum(num + 1)
     }
 
     return (
         <div>
-            <p>state in functional component</p>
-            <p>user name : {username}</p>
-            <button className='btn btn-primary' onClick={btnClickHandle}>click</button>
+            <h2>state: {state}:Roll num: {num}</h2>
+            <button className='btn btn-primary' onClick={onClick}>onClick</button>
+            &nbsp;&nbsp;
+           
+            <button className='btn btn-secondary' onClick={onclickHadler}>roll no.</button>
+
         </div>
     );
 };

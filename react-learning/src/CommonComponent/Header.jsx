@@ -9,6 +9,7 @@ import {
 } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 
+
 export default function Header() {
     const [showNavColorSecond, setShowNavColorSecond] = useState(false);
 
@@ -18,6 +19,11 @@ export default function Header() {
                 <MDBContainer container-fluid>
                     <MDBCollapse show={showNavColorSecond} navbar id='navbarColor02'>
                         <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
+                        <MDBNavbarItem className='active'>
+                                <MDBNavbarLink aria-current='page' href='#'>
+                                     <Link className='nav-link p-3' to="/" ></Link>
+                                </MDBNavbarLink>
+                            </MDBNavbarItem>
                             <MDBNavbarItem className='active'>
                                 <MDBNavbarLink aria-current='page' href='#'>
                                      <Link className='nav-link p-3' to="/" >Home</Link>

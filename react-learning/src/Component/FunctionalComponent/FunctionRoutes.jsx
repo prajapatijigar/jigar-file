@@ -7,7 +7,11 @@ import StateInFunctiCompo from "./StateInFunctiCompo"
 import UseEffectFunCompo from "./UseEffectFunCompo"
 import UseImperativefunCompo from "./UseImperativeHandler"
 import UseMemoInFunCompo from "./UseMemoInFunCompo"
+import UseCallbackInFuncCompo from "./UseCallbackInFuncCompo"
 import StyledCompo from "./StyledCompo"
+import HoneyCombTask from "./HoneyCombTask"
+import UseContextInFuncCompo from "./UseContextInFuncCompo"
+import UseContextTask from "./01UseContextTask"
 const FunctionRoutes = () => {
 
     const routes = useRoutes([
@@ -42,7 +46,24 @@ const FunctionRoutes = () => {
                 {
                     path: "styled",
                     element: <StyledCompo />
+                },
+                {
+                    path: "usecallback",
+                    element: <UseCallbackInFuncCompo />
+                },
+                {
+                    path: "honeycomb",
+                    element: <HoneyCombTask />
+                },
+                {
+                    path: "usecontext",
+                    element: <UseContextInFuncCompo />
+                },
+                {
+                    path: "usecontexttask",
+                    element: <UseContextTask />
                 }
+                
             ]
         }
     ]);

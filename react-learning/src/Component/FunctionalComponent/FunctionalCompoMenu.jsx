@@ -13,6 +13,10 @@ const FunctionalCompoMenu = () => {
                     <li><Link to="useimperative">UseImperative</Link></li>
                     <li><Link to="usememo">Usememo</Link></li>
                     <li><Link to="styled">styled</Link></li>
+                    <li><Link to="usecallback">usecallback</Link></li>
+                    <li><Link to="honeycomb">HoneyCombTask</Link></li>
+                    <li><Link to="usecontext">UseContextInFuncCompo</Link></li>
+                    <li><Link to="usecontexttask">UseCOntextTask-FullName</Link></li>
                 </ol>
             </div>
             <div>
