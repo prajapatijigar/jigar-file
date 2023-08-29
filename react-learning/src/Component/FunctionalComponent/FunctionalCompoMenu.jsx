@@ -16,7 +16,8 @@ const FunctionalCompoMenu = () => {
                     <li><Link to="usecallback">usecallback</Link></li>
                     <li><Link to="honeycomb">HoneyCombTask</Link></li>
                     <li><Link to="usecontext">UseContextInFuncCompo</Link></li>
-                    <li><Link to="usecontexttask">UseCOntextTask-FullName</Link></li>
+                    <li><Link to="usecontexttask">UseContextTask-FullName</Link></li>
+                    <li><Link to="usereducer">UseReducer</Link></li>
                 </ol>
             </div>
             <div>

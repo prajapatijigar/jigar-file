@@ -11,6 +11,7 @@ const UseContextInFuncCompo = () => {
             <Button onclick={() => { setTheme((theme === "dark") ? "light" : "dark"); }}>
                 TOggle Botton
             </Button>
+            <li><a href="https://youtu.be/coM0JK6o3mo?si=zTYSPLqif3vkQJk-" target='_blank'>usecontext videos</a>(codewithharrry)</li>
         </div>
     );
 };

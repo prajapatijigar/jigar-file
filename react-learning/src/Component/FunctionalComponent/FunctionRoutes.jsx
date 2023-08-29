@@ -12,6 +12,7 @@ import StyledCompo from "./StyledCompo"
 import HoneyCombTask from "./HoneyCombTask"
 import UseContextInFuncCompo from "./UseContextInFuncCompo"
 import UseContextTask from "./01UseContextTask"
+import UseReducerInFunc from "./UseReducerInFunc"
 const FunctionRoutes = () => {
 
     const routes = useRoutes([
@@ -62,7 +63,12 @@ const FunctionRoutes = () => {
                 {
                     path: "usecontexttask",
                     element: <UseContextTask />
+                },
+                {
+                    path: "usereducer",
+                    element: <UseReducerInFunc />
                 }
+                
                 
             ]
         }
