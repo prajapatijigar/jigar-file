@@ -71,14 +71,19 @@
 
 import React, { createContext, useContext, useState } from 'react';
 
-const ThemeContext = createContext(null)
+const ThemeContext = createContext({ color: "", size: "" })
+// const SizeContext = createContext(null)
 const UseContextTask = () => {
-    const [color, setColor] = useState("button color")
+    const [color, setColor] = useState("primary")
+    const [size, setSize] = useState("md")
+
 
     return (
         <div>
-            <ThemeContext.Provider value={color}>
+            <ThemeContext.Provider value={{ color, size }}>
+                {/* <SizeContext.Provider value={size}> */}
                 <Form />
+                {/* </SizeContext.Provider> */}
             </ThemeContext.Provider>
             <br />
             {/* <Button onclick={() => { setTheme(state + 1) }}>
@@ -94,10 +99,9 @@ const UseContextTask = () => {
             <Button onclick={() => { setColor("warning") }}>Warning</Button>
             <Button onclick={() => { setColor("info") }}>Info</Button>
             <Button onclick={() => { setColor("light") }}>Light</Button>
-            <Button onclick={() => { setColor("dark") }}>Dark</Button>
-
-
-
+            <Button onclick={() => { setColor("dark") }}>Dark</Button><br />
+            <Button onclick={() => { setSize("lg") }}>Large</Button>
+            <Button onclick={() => { setSize("sm") }}>Small</Button>
         </div>
     );
 };
@@ -113,20 +117,23 @@ function Form() {
 }
 
 function Panel({ title, children }) {
-    const color = useContext(ThemeContext)
+    const {color,size} = useContext(ThemeContext)
     return (
         <section>
             PanelComponent
             <h2>{title}</h2>
+            {/* <p>{"btn-"+ color + " btn-"+ size }</p> */}
             <p>{color}</p>
+            <p>{size}</p>
             {children}
         </section>
     )
 }
 
 function Button({ onclick, children }) {
-    const color = useContext(ThemeContext)
-    const className = "btn btn-" + color
+    const {color,size} = useContext(ThemeContext)
+    // const size = useContext(ThemeContext)
+    const className = `btn btn-${color} btn-${size}` 
     return (
         <>
             <button className={className} onClick={onclick}>{children}</button>
