@@ -18,6 +18,8 @@ const FunctionalCompoMenu = () => {
                     <li><Link to="usecontext">UseContextInFuncCompo</Link></li>
                     <li><Link to="usecontexttask">UseContextTask-FullName</Link></li>
                     <li><Link to="usereducer">UseReducer</Link></li>
+                    <li><Link to="registrationform">Registration- Form</Link></li>
+                    <li><Link to="apiexample">Api-Example</Link></li>
                 </ol>
             </div>
             <div>

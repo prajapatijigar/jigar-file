@@ -1,7 +1,9 @@
 import React, { useCallback, useState } from 'react';
 
-const funcount = new Set()
 const UseCallbackInFuncCompo = () => {
+
+    const funcount = new Set()
+
     const [count, setcount] = useState(0)
     const [num, setnum] = useState(0)
 

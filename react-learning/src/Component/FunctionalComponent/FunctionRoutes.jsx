@@ -1,5 +1,5 @@
 import React, { Children } from 'react';
-import { Form, useRoutes } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
 import FunctionalCompoMenu from "./FunctionalCompoMenu"
 import FunctionalComponentIntro from "./FunctionalComponentIntro"
 import PropsInFuncCompo from "./PropsInFuncCompo"
@@ -13,6 +13,8 @@ import HoneyCombTask from "./HoneyCombTask"
 import UseContextInFuncCompo from "./UseContextInFuncCompo"
 import UseContextTask from "./01UseContextTask"
 import UseReducerInFunc from "./UseReducerInFunc"
+import RegistrationForm from "./RegistrationForm"
+import APIExample from './APIExample';
 const FunctionRoutes = () => {
 
     const routes = useRoutes([
@@ -67,9 +69,15 @@ const FunctionRoutes = () => {
                 {
                     path: "usereducer",
                     element: <UseReducerInFunc />
-                }
-                
-                
+                },
+                {
+                    path: "registrationform",
+                    element: <RegistrationForm/>
+                },
+                {
+                    path: "apiexample",
+                    element: <APIExample/>
+                }  
             ]
         }
     ]);

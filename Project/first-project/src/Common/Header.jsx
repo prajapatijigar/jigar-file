@@ -20,7 +20,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [showBasic, setShowBasic] = useState(false);
 
-  const MenuData = { "/": "Home", "/about": "About", "/contactus": "Contact", "/example": "Example" }
+  const MenuData = { "/": "Home", "/about": "About", "/contactus": "Contact", "/example": "Example","/apiexample" : "API" }
   console.log("MenuData", MenuData);
   //  console.log("object.entries", Object.entries(MenuData));
 
