@@ -15,6 +15,7 @@ import UseContextTask from "./01UseContextTask"
 import UseReducerInFunc from "./UseReducerInFunc"
 import RegistrationForm from "./RegistrationForm"
 import APIExample from './APIExample';
+import FormValidation from './FormValidation';
 const FunctionRoutes = () => {
 
     const routes = useRoutes([
@@ -77,6 +78,10 @@ const FunctionRoutes = () => {
                 {
                     path: "apiexample",
                     element: <APIExample/>
+                },
+                {
+                    path: "formvalidation",
+                    element: <FormValidation/>
                 }  
             ]
         }
