@@ -7,6 +7,7 @@ import StateInClass from './StateInClass';
 import CondiRenderingInClassCompo from "./CondiRenderingInClassCompo"
 import Controlled from "./ControlledClass";
 import ListKeysInClassCompo from "./ListKeysInClassCompo"
+import StateLifeCycle from "./StateLifeCycleInClsssCompo" 
 
 
 class ClassRoutes extends Component {
@@ -22,6 +23,7 @@ class ClassRoutes extends Component {
                         <Route path="conditionrendering" element={<CondiRenderingInClassCompo />} />
                         <Route path="controlled" element={<Controlled />} />
                         <Route path="listkeys" element={<ListKeysInClassCompo />} />
+                        <Route path='statelifecycle' element={<StateLifeCycle/>} />
                     </Route>
                 </Routes>
             </div>

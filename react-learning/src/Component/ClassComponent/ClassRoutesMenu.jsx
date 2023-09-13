@@ -13,6 +13,7 @@ class ClassComponentMenu extends Component {
                     <li><Link to="conditionrendering">conditionrendering</Link></li>
                     <li><Link to="controlled">controlled</Link></li>
                     <li><Link to="listkeys">listkeys</Link></li>
+                    <li><Link to='StateLifeCycle'>StateLifeCycle In ClassCompo</Link></li>
                 </ol>
                 <Outlet></Outlet>
 
