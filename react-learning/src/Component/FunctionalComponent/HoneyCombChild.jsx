@@ -55,13 +55,13 @@ const HoneyCombChild = forwardRef((props, ref) => {
 
 
   return (
-    <div>
+    <>
       <p>heloo</p>
       <p>remaining element : {ele} , {ele2}</p>
       <button onClick={onchange}>shuffle</button>
       <p>element: {state}</p>
 
-    </div>
+    </>
   );
 });
 

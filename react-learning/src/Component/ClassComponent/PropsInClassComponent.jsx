@@ -6,7 +6,7 @@ import image from "./statevsprops.webp"
 class PropsInClassComponent extends Component {
     render() {
         return (
-            <div>
+            <>
                 <div className="row">
                     <div className="col-8 mt-5">
                         <div>
@@ -31,7 +31,7 @@ class PropsInClassComponent extends Component {
                         <ChildComponent title= "card title" imagedata = 'images/statevsprops.webp'/>
                     </div>
                 </div>
-            </div>
+            </>
         );
     }
 }

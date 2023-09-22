@@ -13,7 +13,7 @@ const StateInFunctiCompo = () => {
     }
 
     return (
-        <div>
+        <>
             <ol>
                 <li>What is the useState() Hook used for?</li>
                 <p>=&gt; The useState() Hook is a built-in Hook in React that allows functional components to manage local state</p>
@@ -26,7 +26,7 @@ const StateInFunctiCompo = () => {
 
             <button className='btn btn-secondary' onClick={onclickHadler}>roll no.</button>
 
-        </div>
+        </>
     );
 };
 

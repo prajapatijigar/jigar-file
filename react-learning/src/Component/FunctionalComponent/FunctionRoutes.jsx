@@ -16,6 +16,8 @@ import UseReducerInFunc from "./UseReducerInFunc"
 import RegistrationForm from "./RegistrationForm"
 import APIExample from './APIExample';
 import FormValidation from './FormValidation';
+import DynamicTable from "./DynamicTable"
+import TodoList  from './TodoList'
 const FunctionRoutes = () => {
 
     const routes = useRoutes([
@@ -82,7 +84,15 @@ const FunctionRoutes = () => {
                 {
                     path: "formvalidation",
                     element: <FormValidation/>
-                }  
+                },
+                {
+                    path: "dynamictable",
+                    element: <DynamicTable/>
+                },
+                {
+                    path : "todolist",
+                    element : <TodoList/>
+                }
             ]
         }
     ]);

@@ -13,7 +13,7 @@ import StateLifeCycle from "./StateLifeCycleInClsssCompo"
 class ClassRoutes extends Component {
     render() {
         return (
-            <div>
+            <>
                 <Routes>
                     <Route path='/' element={<ClassComponentMenu />}>
                         <Route path="basiclevel" element={<BasicLevelReact/>} />
@@ -26,7 +26,7 @@ class ClassRoutes extends Component {
                         <Route path='statelifecycle' element={<StateLifeCycle/>} />
                     </Route>
                 </Routes>
-            </div>
+            </>
         );
     }
 }

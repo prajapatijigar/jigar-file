@@ -10,7 +10,7 @@ const HoneyCOmbTask = () => {
     }
 
     return (
-        <div>
+        <>
 
             {(ele && ele.length) ?
                 <table>
@@ -32,7 +32,7 @@ const HoneyCOmbTask = () => {
 
             <button onClick={() => childRef.current.getAlert()}>shuffle</button>
             <HoneyCombChild onChange={parentData} ref={childRef} />
-        </div>
+        </>
     );
 };
 

@@ -21,6 +21,8 @@ const FunctionalCompoMenu = () => {
                     <li><Link to="registrationform">Registration- Form</Link></li>
                     <li><Link to="apiexample">Api-Example</Link></li>
                     <li><Link to="formvalidation">Form-validation</Link></li>
+                    <li><Link to="dynamictable">Dynamic-Table</Link></li>
+                    <li><Link to="todolist">Todo-List</Link></li>
                 </ol>
             </div>
             <div>

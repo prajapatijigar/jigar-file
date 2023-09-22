@@ -79,7 +79,7 @@ const UseContextTask = () => {
 
 
     return (
-        <div>
+        <>
             <ThemeContext.Provider value={{ color, size }}>
                 {/* <SizeContext.Provider value={size}> */}
                 <Form />
@@ -102,7 +102,7 @@ const UseContextTask = () => {
             <Button onclick={() => { setColor("dark") }}>Dark</Button><br />
             <Button onclick={() => { setSize("lg") }}>Large</Button>
             <Button onclick={() => { setSize("sm") }}>Small</Button>
-        </div>
+        </>
     );
 };
 

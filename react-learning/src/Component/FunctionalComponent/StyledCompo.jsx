@@ -28,7 +28,7 @@ const TomatoButton = styled(Button)`
 
 const StyledCompo = () => {
   return (
-    <div>
+    <>
       {/* <h2>htfhjkdjdj</h2> */}
       <ol>
         <li>what is styled component in reactjs</li>
@@ -40,6 +40,10 @@ const StyledCompo = () => {
         <p>First we need give a custom name of our choice. Then we'll start with styled.&#60;HTML Tag Name&#62; and wrap the style in backticks. Now when we use this custom component it will have the &#60;HTML Tag Name&#62; property with styling.
 
           import styled from 'styled-components'</p>
+        <p>4- ways add to  css in website</p>
+        <p>=&gt; 1 - normal css, 2- custom css ,3 - inline css, 4- styled component css</p>
+
+
       </ol>
       <Title>
         hello
@@ -49,7 +53,7 @@ const StyledCompo = () => {
       <TomatoButton>Tomato Button</TomatoButton>
 
 
-    </div>
+    </>
   );
 };
 

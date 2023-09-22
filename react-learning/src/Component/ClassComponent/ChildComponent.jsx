@@ -11,7 +11,7 @@ import {
 class ChildComponent extends Component {
     render() {
         return (
-            <div>
+            <>
                 <MDBCard>
                     <MDBCardImage src={this.props.imagedata} position='top' alt='...' />
                     <MDBCardBody>
@@ -22,7 +22,7 @@ class ChildComponent extends Component {
                         <MDBBtn href='#'>Button</MDBBtn>
                     </MDBCardBody>
                 </MDBCard>
-            </div>
+            </>
         );
     }
 }

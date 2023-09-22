@@ -4,7 +4,7 @@ import "./Login.css"
 const RegistrationForm = () => {
     const [status, setStatus] = useState(true)
     return (
-        <div>
+        <>
             {/* <div className="container"> */}
             <div className='body-auth'>
                 <div className={(status) ? "container-auth sign-in" : "container-auth log-in"}>
@@ -14,7 +14,7 @@ const RegistrationForm = () => {
                             <div className="info-item">
                                 <div className="table">
                                     <div className="table-cell">
-                                        <p>
+                                        <p> 
                                             Have an account?
                                         </p>
                                         <div className="btn-auth" onClick={() => { console.log("called"); setStatus(true) }}>
@@ -62,7 +62,7 @@ const RegistrationForm = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
         // </div>
     );
 };

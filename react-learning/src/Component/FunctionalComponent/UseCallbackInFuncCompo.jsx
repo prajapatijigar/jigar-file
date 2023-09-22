@@ -25,7 +25,7 @@ const UseCallbackInFuncCompo = () => {
     console.log("funcount", funcount);
 
     return (
-        <div>
+        <>
             <h2>usecallback in functional</h2>
             <p>count : {count}</p>
             <p>num : {num}</p>
@@ -33,7 +33,7 @@ const UseCallbackInFuncCompo = () => {
             <button className='btn btn-primary' onClick={decrease}>decrease</button> &nbsp;
             <button className='btn btn-primary' onClick={increasenum}>increasenum</button>
 
-        </div>
+        </>
     );
 };
 

@@ -30,7 +30,8 @@ const FormValidation = () => {
     const passwordData = (e) => {
         let input = e.target.value
 
-        if (input.length < 3) {
+        if (input.length < 3) 
+        {
             setInp(true)
         } else {
             setInp(false)
@@ -41,14 +42,14 @@ const FormValidation = () => {
 
 
     return (
-        <div>
+        <>
             <h2>validation form</h2>
             <form onSubmit={loginHandle}>
                 <input type="text" placeholder='enter your username' onChange={userData} />{inp ? "user not valid" : ""}<br /><br />
                 <input type="password" placeholder='enter your password' onChange={passwordData} />{inp ? "user not valid" : ""}<br /><br />
                 <button type='submit'>submit</button>
             </form>
-        </div>
+        </>
     );
 };
 

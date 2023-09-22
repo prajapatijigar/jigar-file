@@ -15,8 +15,9 @@ class ClassComponentMenu extends Component {
                     <li><Link to="listkeys">listkeys</Link></li>
                     <li><Link to='StateLifeCycle'>StateLifeCycle In ClassCompo</Link></li>
                 </ol>
-                <Outlet></Outlet>
-
+                <div>
+                    <Outlet></Outlet>
+                </div>
             </>
         )
     }

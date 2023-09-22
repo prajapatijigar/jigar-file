@@ -6,8 +6,8 @@ import About from "./About";
 import Example from "./Example";
 import Menu from "./Menu";
 import Blog from "./Blog";
-import Shop from "./Shop";
-import Contact from "./Contact"
+import Contact from './Contact'
+import Weather from "./Weather"
 
 const ClassComponentRoute = React.lazy(() =>import("./Component/ClassComponent/ClassRoutes.jsx"))
 const FunctionComponentRoute = React.lazy(()=> import("./Component/FunctionalComponent/FunctionRoutes.jsx"))
@@ -26,13 +26,13 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "classcomponent/*",
-                element: <Suspense fallback={<h2>Loading....</h2>}> <ClassComponentRoute /> </Suspense>
+                element: <Suspense fallback={<h2>Loading....</h2>}> <ClassComponentRoute /> </Suspense>,
             },
             {
                 path: "functioncomponent/*",
-                element: <Suspense fallback={<h2>Loading....</h2>}> <FunctionComponentRoute /> </Suspense>
-            },
-        ]
+                element: <Suspense fallback={<h2>Loading....</h2>}> <FunctionComponentRoute /> </Suspense>,
+            }
+        ],
     },
     {
         path: "/menu",
@@ -43,15 +43,13 @@ const router = createBrowserRouter([
         element: <><Header /><Blog /></>,
     },
     {
-        path: "/shop",
-        element: <><Header /><Shop /></>,
+        path: "/weather",
+        element: <><Header /><Weather /></>,
     },
     {
         path: "/contact",
-        element: <><Header /><Contact /></>,
-    },
+        element: <><Header /><Contact /></>,    
+    }
+])
 
-
-]);
-
-export default router
+export default router;

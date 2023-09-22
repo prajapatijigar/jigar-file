@@ -30,7 +30,7 @@ class StateInClass extends Component {
     // }
     render() {
         return (
-            <div>
+            <>
                 {/* <p> the car name is {this.state.car}, modal is {this.state.modal}, {this.state.color}</p>
                 <button onClick={this.changecolor}>click</button> */}
 
@@ -54,7 +54,7 @@ class StateInClass extends Component {
 
                 <p>my name is {this.state.name},my age {this.state.age}</p>
                 <button onClick={this.clickHandle}>click</button>
-            </div>
+            </>
         );
     }
 }

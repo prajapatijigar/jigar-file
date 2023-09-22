@@ -22,8 +22,7 @@ class ListsInClassCompo extends Component {
             </li>
         })
         return (
-            <>
-                 
+            <>   
                 <ul className='personsdata'>
                     {ListData}
                 </ul>

@@ -29,7 +29,7 @@ const UseEffectFunCompo = () => {
 
     }, [count])
     return (
-        <div>
+        <>
             <ol>
                 <li>what is useeffect hook?</li>
                 <p>=&gt; useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined.</p>
@@ -40,7 +40,7 @@ const UseEffectFunCompo = () => {
             </ol>
             <p>count : {count}</p>
             <p>num : {num}</p>
-        </div>
+        </>
     );
 };
 

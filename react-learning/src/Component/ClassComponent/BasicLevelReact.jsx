@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class BasicLevelReact extends Component {
     render() {
         return (
-            <div>
+            <>
                 <ol>
                     <li><h5>What is React?</h5></li>
                     <p>React is a popular JavaScript library for building user interfaces. It allows
@@ -291,7 +291,7 @@ class BasicLevelReact extends Component {
                         form data from the event object to perform further processing or submit
                         data to a server.</p>
                 </ol>
-            </div>
+            </>
         );
     }
 }

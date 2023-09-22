@@ -26,7 +26,7 @@ const UseMemoInFunCompo = () => {
     }
 
     return (
-        <div>
+        <>
             
             <h2>useCallback returns a memoized callback function, while useMemo returns a memoized value.</h2>
             <input type="number" value={number} onChange={onchangeHadler} />
@@ -36,7 +36,7 @@ const UseMemoInFunCompo = () => {
             
 
             {/* <p>{number}</p> */}
-        </div>
+        </>
     );
 };
 
